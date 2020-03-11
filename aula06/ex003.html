@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula06 - Exercício 003</title>
+    <style>
+        body{
+            background-color: rgb(105, 105, 170); /*Comentário em CSS */
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color:rgb(255, 212, 22)
+        }
+
+    </style>
+</head>
+<body>
+    <h1>Olá, mundo!</h1> <!--Comentário em HTML -->
+    <p>Já me livrei da maldição!</p>
+    <script>
+        var n1 = Number.parseInt(window.prompt('Digite um número: ')); // Converte de Float para Int
+        var n2 = Number.parseInt(window.prompt('Digite outro número: ')); // Se usar somente NUMBER, o JS decide se é int ou float
+        // Se for STRING, as duas formas é n.toString() ou String(n)
+        var s = n1 + n2;
+        //window.alert('A soma de n1 + n2 = '+ s); // Modo Antigo
+        window.alert(`A soma de ${n1} + ${n2} = ${s}`);
+    </script>
+
+
+</body>
+</html>

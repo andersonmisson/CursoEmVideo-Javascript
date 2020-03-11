@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 06 - Ex 004</title>
+    <style>
+        body{
+            font: normal 20pt Arial;
+        }
+
+    </style>
+</head>
+<body>
+    <script>
+        var nome = window.prompt("Qual é o seu nome?");
+        document.write(`Seu nome é ${nome}<br>`);
+        document.write(`O nome ${nome} tem ${nome.length} letras<br>`);
+        document.write(`O nome em Negrito <strong>${nome}</strong> e tudo maiúscula ${nome.toUpperCase()}<br>`);
+        document.write(`O nome em minúsculo fica ${nome.toLowerCase()}<br>`);
+        var n1 = 1545.5;
+        document.write(`<br>Valor de N1 é ${n1}<br>`);
+        // Colocar 2 casas depois da virgula com .toFixes(número de casas) e .replace muda de '.' para ','
+        document.write(`Valor N1 convertendo de ponto para virgula ${n1.toFixed(2).replace('.',',')}<br>`);
+        // Formatar para dinheiro do Brasil R$
+        document.write(`Formatar para REAL. ${n1.toLocaleString('pt-BR',{style: 'currency', currency: 'BRL'})}<br>`);
+        // Formatar para dinheiro dos IENE 
+        document.write(`Formatar para IENE. ${n1.toLocaleString('ja-JP',{style: 'currency', currency: 'JPY'})}<br>`);
+        // Formatar para dinheiro dos DOLAR
+        document.write(`Formatar para DOLAR. ${n1.toLocaleString('en-US',{style: 'currency', currency: 'USD'})}<br>`);
+        // Formatar para dinheiro dos EURO 
+        document.write(`Formatar para EURO. ${n1.toLocaleString('de-DE',{style: 'currency', currency: 'EUR'})}<br>`);
+    </script>
+</body>
+</html>
