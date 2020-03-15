@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 07 e 08 - Operadores</title>
+    <style>
+        body{
+            background-color: rgb(105, 105, 170); /*Comentário em CSS */
+            color: white;
+            font: normal 20pt Arial;
+        }
+        h1{
+            color:rgb(255, 212, 22)
+        }
+
+    </style>
+
+</head>
+
+<body>
+    <h1>Aula 07 e Aula 08 - Operadores</h1>
+    <script>
+        var x = 5;
+        var y = 2;
+        var z = '5';
+        var soma = x + y;
+        var subtracao = x - y;
+        var multiplicacao = x * y;
+        var divisao = x / y;
+        var potencia = x ** y;
+        var resto = x % y;
+        // Valores de X e Y
+        document.write(`<strong>x</strong> = ${x}, <strong>y</strong> = ${y}.<br \>`);
+        // Soma dos valores x e y
+        document.write(` Soma -> ${x} + ${y} = ${soma}.<br \>`);
+        // Subtração dos valores x e y
+        document.write(` Subtração -> ${x} - ${y} = ${subtracao}.<br \>`);
+        // Multiplicação dos valores x e y
+        document.write(` Multiplicação -> ${x} * ${y} = ${multiplicacao}.<br \>`);
+        // Divisão Inteira dos valores x e y
+        document.write(` Divisão Inteira -> ${x} / ${y} = ${Number.parseInt(divisao)}.<br \>`);
+        // Divisão dos valores x e y
+        document.write(` Divisão -> ${x} / ${y} = ${divisao}.<br \>`);
+        // Resto da Divisão dos valores x e y
+        document.write(` Resto da Divisão -> ${x} % ${y} = ${resto}.<br \>`);
+        // Potência dos valores x e y
+        document.write(` Potência -> ${x} ** ${y} = ${potencia}.<br \>`);
+        // Maior dos valores x e y
+        document.write(` Maior -> ${x} > ${y} = ${x > y}.<br \>`);
+        // Menor dos valores x e y
+        document.write(` Menor -> ${x} < ${y} = ${x < y}.<br \>`);
+        // Maior ou Igual dos valores x e y
+        document.write(` Maior ou Igual -> ${x} >= ${y} = ${x >= y}.<br \>`);
+        // Menor ou Igual dos valores x e y
+        document.write(` Menor ou Igual -> ${x} <= ${y} = ${x <= y}.<br \>`);
+        // 5 Inteiro é Igual a 5 String
+        document.write(` 5 Inteiro é Igual a 5 String com == -> ${x} == '${z}' = ${x == z}.<br \>`);
+        // 5 Inteiro é do tipo 5 String
+        document.write(` 5 Inteiro é do tipo 5 String com === -> ${x} === '${z}' = ${x === z}.<br \>`);
+    </script>
+    
+</body>
+</html>
